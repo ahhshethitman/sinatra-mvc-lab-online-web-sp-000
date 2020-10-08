@@ -21,7 +21,9 @@ class PigLatinizer
     new_sentence = pig_latinized_words.join(" ")
   end
 
- 
+  def begins_with_vowel
+    vowel_word = @new_word << "way"
+  end
 
   def begins_with_consonant
     if @new_word[0] == "q" && @new_word[1] == "u"
